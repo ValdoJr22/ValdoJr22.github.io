@@ -126,7 +126,7 @@
             <h2>My Certificates</h2>
           </div>
         </div>
-        <div class="row text-center">
+        <div class="row text-center justify-content-center">
           <div class="col-md-4 mb-3">
             <div class="card">
               <img
@@ -151,6 +151,8 @@
               </div>
             </div>
           </div>
+        </div>
+        <div class="row text-center justify-content-center">
           <div class="col-md-4 mb-3">
             <div class="card">
               <img
@@ -162,6 +164,18 @@
                 <p class="card-text">
                   Tips and Trick to Maximize SEO for e-Commerce
                 </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <img
+                src="img/IT Career Preparation Program.png"
+                class="card-img-top"
+                alt="IT Career Preparation Program"
+              />
+              <div class="card-body">
+                <p class="card-text">IT Career Preparation Program</p>
               </div>
             </div>
           </div>
@@ -211,7 +225,9 @@
                   <textarea class="form-control" id="pesan" rows="3"></textarea>
                 </div>
               </div>
-              <button type="submit" class="btn btn-primary">Send</button>
+              <button onclick="doAlert()" type="submit" class="btn btn-primary">
+                Send
+              </button>
             </form>
           </div>
         </div>
@@ -243,5 +259,10 @@
       integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
       crossorigin="anonymous"
     ></script>
+    <script>
+      function doAlert() {
+        alert("Coming Soon!");
+      }
+    </script>
   </body>
 </html>
