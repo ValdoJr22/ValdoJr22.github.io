@@ -31,7 +31,7 @@
   <body id="body">
     <!-- Navbar -->
     <nav
-      class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm fixed-top"
+      class="navbar navbar-expand-md navbar-dark bg-primary shadow-md fixed-top"
     >
       <div class="container">
         <a class="navbar-brand fw-bold" href="#">Rivaldo</a>
@@ -73,9 +73,10 @@
         src="img/Rivaldo.jpg"
         alt="Profile Picture"
         class="rounded-circle img-thumbnail"
-        width="250"
+        style="max-width: 70%"
+        width="300"
       />
-      <h1 class="display-4 fw-bold">Rivaldo</h1>
+      <h1 class="display-3 fw-bold mt-3">Rivaldo</h1>
       <p class="lead fs-3">Civil Engineer | Programmer</p>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
@@ -90,17 +91,17 @@
     <section id="about">
       <div class="container">
         <div class="container">
-          <div class="col text-center mb-3">
+          <div class="col text-center mb-5">
             <h2>About Me</h2>
           </div>
           <div class="row text-center justify-content-center fs-5">
-            <div class="col-md-4">
+            <div class="col-md-5">
               <p>
                 Civil Engineering Student.<br />
                 Started learning coding since July 2021.
               </p>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-5">
               <p>
                 Have skills in HTML and CSS.<br />
                 Currently studying JavaScript and React.
@@ -130,12 +131,15 @@
           <div class="col-md-4 mb-3">
             <div class="card">
               <img
-                src="img/Responsive Web Design.png"
+                src="img/Belajar Membuat Aplikasi Back-End untuk Pemula dengan Google Cloud.jpg"
                 class="card-img-top"
-                alt="Responsive Web Design"
+                alt="Belajar Membuat Aplikasi Back-End untuk Pemula dengan Google Cloud"
               />
               <div class="card-body">
-                <p class="card-text">Responsive Web Design</p>
+                <p class="card-text">
+                  Belajar Membuat Aplikasi Back-End untuk Pemula dengan Google
+                  Cloud
+                </p>
               </div>
             </div>
           </div>
@@ -148,6 +152,32 @@
               />
               <div class="card-body">
                 <p class="card-text">Belajar Dasar Git dengan GitHub</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row text-center justify-content-center">
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <img
+                src="img/Memulai Pemrograman dengan Dart.jpg"
+                class="card-img-top"
+                alt="Memulai Pemrograman dengan Dart"
+              />
+              <div class="card-body">
+                <p class="card-text">Memulai Pemrograman dengan Dart</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <img
+                src="img/Cloud Practitioner Essentials.jpg"
+                class="card-img-top"
+                alt="Cloud Practitioner Essentials"
+              />
+              <div class="card-body">
+                <p class="card-text">Cloud Practitioner Essentials</p>
               </div>
             </div>
           </div>
@@ -194,9 +224,7 @@
     <section id="contact">
       <div class="container">
         <div class="row text-center mb-3">
-          <div class="col">
-            <h2>Contact Me</h2>
-          </div>
+          <h2>Contact Me</h2>
         </div>
         <div class="row justify-content-center">
           <div class="col-md-6">
@@ -211,9 +239,7 @@
                 />
               </div>
               <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label"
-                  >Email Address</label
-                >
+                <label for="email" class="form-label">Email Address</label>
                 <input
                   type="email"
                   class="form-control"
@@ -221,8 +247,12 @@
                   aria-describedby="email"
                 />
                 <div class="mb-3">
-                  <label for="pesan" class="form-label pt-3">Message</label>
-                  <textarea class="form-control" id="pesan" rows="3"></textarea>
+                  <label for="message" class="form-label pt-3">Message</label>
+                  <textarea
+                    class="form-control"
+                    id="message"
+                    rows="3"
+                  ></textarea>
                 </div>
               </div>
               <button onclick="doAlert()" type="submit" class="btn btn-primary">
